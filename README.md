@@ -1,6 +1,8 @@
 # SLCSP
 
 ## Calculate the second lowest cost silver plan
+This is a job's homework assignment for evaluating candidates. It wants a command line buildable application for the problem below
+so I spent a bit of time figuring out how to make a kotlin script.
 
 ## Problem
 
