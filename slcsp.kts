@@ -5,6 +5,7 @@ import com.github.doyaaaaaken.kotlincsv.dsl.csvReader
 import com.github.doyaaaaaken.kotlincsv.dsl.csvWriter
 import java.io.File
 
+// Initialize csv reader an writer file objects and the 2 maps I used
 val slc = File("slcsp.csv")
 val plans = File("plans.csv")
 val zip = File("zips.csv")
@@ -13,6 +14,7 @@ val writer = csvWriter()
 val zipmap = mutableMapOf<String, String>()
 val ratePlans = mutableMapOf<String, MutableList<Double>>()
 
+//Get zips I need to solve sclsp for in map
 reader.open(slc){
     readAllAsSequence().forEach { row: List<String> ->
         if (row[0] == "zipcode")
@@ -21,6 +23,7 @@ reader.open(slc){
     }
 }
 
+// 
 reader.open(zip){
     readAllAsSequence().forEach { row: List<String> ->
         val rateArea = Pair(row[1], row[4]).toString()
