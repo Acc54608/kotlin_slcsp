@@ -1,0 +1,9 @@
+Hi, this script is a submission for the Second Lowest Cost Silver Plan homework.
+I used a Linux Mint VM to make sure these instructions should work for building.
+The instructions to be able to run the script from command line should be as follows:
+Install Kotlin's standalone compiler itself here: https://kotlinlang.org/docs/command-line.html
+Download and install Maven, I used the software manager in Mint but you can just download and
+unzip it then add the bin to PATH
+And install kscript from here https://github.com/holgerbrandl/kscript I used SDKMAN to install 
+this and the kotlin compiler.
+After those 3 things are installed and set up you can just open a terminal in the folder and run with the command "kscript slcsp.kts"
